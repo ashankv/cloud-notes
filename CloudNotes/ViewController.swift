@@ -22,6 +22,7 @@ class ViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
+        
         self.navigationController?.navigationBar.prefersLargeTitles = true
 
         editButtonItem.tintColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.0)

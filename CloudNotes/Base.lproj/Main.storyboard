@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.97108218964767989" blue="0.89591535125467114" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="GyN-en-iAi" customClass="Cell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -26,6 +27,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.97108218960000003" blue="0.8959153513" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="ln6-yj-QCE" kind="show" identifier="showDetail" id="wC3-FA-84K"/>
                                 </connections>
@@ -65,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.97108218960000003" blue="0.8959153513" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="nsg-lL-97T"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="never" id="sbD-Q1-1ng"/>
@@ -111,7 +113,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.97108218960000003" blue="0.8959153513" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="cuN-Qf-KNV" firstAttribute="top" secondItem="co6-6z-TWs" secondAttribute="top" constant="116" id="7LP-zb-xfr"/>
                             <constraint firstItem="IY9-Uu-sgZ" firstAttribute="top" secondItem="8Bu-Dy-B7S" secondAttribute="bottom" constant="8" id="Fm5-PR-edf"/>

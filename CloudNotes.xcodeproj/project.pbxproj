@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9ACB7BE8210C565400CE0AD7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB7BE7210C565400CE0AD7 /* Note.swift */; };
 		9ACD8A782102A41B00AB010F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD8A772102A41B00AB010F /* AppDelegate.swift */; };
 		9ACD8A7A2102A41B00AB010F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD8A792102A41B00AB010F /* ViewController.swift */; };
 		9ACD8A7D2102A41B00AB010F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACD8A7B2102A41B00AB010F /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9ACB7BE7210C565400CE0AD7 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		9ACD8A742102A41B00AB010F /* CloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACD8A772102A41B00AB010F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ACD8A792102A41B00AB010F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				9ACD8A802102A41B00AB010F /* LaunchScreen.storyboard */,
 				9ACD8A832102A41B00AB010F /* Info.plist */,
 				9AE047D6210BDBFF000B3857 /* NoteViewController.swift */,
+				9ACB7BE7210C565400CE0AD7 /* Note.swift */,
 			);
 			path = CloudNotes;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACB7BE8210C565400CE0AD7 /* Note.swift in Sources */,
 				9AE047D7210BDBFF000B3857 /* NoteViewController.swift in Sources */,
 				9ACD8AE42102C11D00AB010F /* DetailViewController.swift in Sources */,
 				9ACD8A7A2102A41B00AB010F /* ViewController.swift in Sources */,
