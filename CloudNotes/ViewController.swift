@@ -12,9 +12,11 @@ class ViewController: UITableViewController {
     
     var notes = [Any]()
     
-    @IBAction func addButton(_ sender: Any) {
     
+    @IBAction func addButton(_ sender: Any) {
+        performSegue(withIdentifier: "addSegue", sender: self)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,9 +27,9 @@ class ViewController: UITableViewController {
         editButtonItem.tintColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.0)
         navigationItem.leftBarButtonItem = editButtonItem
         
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target:self, action: #selector(insertNewObject(_:)))
-        addButton.tintColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.0)
-        navigationItem.rightBarButtonItem = addButton
+        //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target:self, action: #selector(insertNewObject(_:)))
+        //addButton.tintColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.0)
+        //navigationItem.rightBarButtonItem = addButton
         
     }
 
@@ -57,6 +59,8 @@ class ViewController: UITableViewController {
         
             }
         }
+        
+        
     }
     
     // Table View
