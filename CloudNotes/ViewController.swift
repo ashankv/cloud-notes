@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
+    var testNote = Note(title:"Test", body:"Hello World!")
     var notes = [Any]()
     
     
@@ -22,6 +23,10 @@ class ViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
+        notes.append(testNote)
+        notes.append(testNote)
+        notes.append(testNote)
+        notes.append(testNote)
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
 
@@ -51,7 +56,7 @@ class ViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 
-                let note = notes[indexPath.row] as! NSDate
+                let note = notes[indexPath.row] as! Note
                 let controller = (segue.destination) as! DetailViewController
                 
                 controller.detailItem = note
@@ -77,8 +82,8 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let note = notes[indexPath.row] as! NSDate
-        cell.textLabel!.text = note.description
+        let note = notes[indexPath.row] as! Note
+        cell.textLabel!.text = note.title
         return cell
     }
     
