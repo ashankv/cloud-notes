@@ -8,15 +8,20 @@
 
 import UIKit
 
+var notes = [Any]()
+
 class ViewController: UITableViewController {
     
     var testNote = Note(title:"Test", body:"Hello World!")
-    var notes = [Any]()
-    
     
     @IBAction func addButton(_ sender: Any) {
         performSegue(withIdentifier: "addSegue", sender: self)
     }
+    
+    @IBAction func unwindToMenu(segue: UIStoryboardSegue) {
+        
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +37,6 @@ class ViewController: UITableViewController {
 
         editButtonItem.tintColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.0)
         navigationItem.leftBarButtonItem = editButtonItem
-        
-        //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target:self, action: #selector(insertNewObject(_:)))
-        //addButton.tintColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.0)
-        //navigationItem.rightBarButtonItem = addButton
         
     }
 
@@ -65,8 +66,6 @@ class ViewController: UITableViewController {
         
             }
         }
-        
-        
     }
     
     // Table View

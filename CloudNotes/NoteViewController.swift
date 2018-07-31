@@ -13,6 +13,10 @@ class NoteViewController: UIViewController {
     @IBOutlet var titleText: UIView!
     @IBOutlet weak var bodyTextField: UITextView!
     
+    @IBAction func doneButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "unwindToMenu", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
