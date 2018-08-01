@@ -14,6 +14,8 @@ class NoteViewController: UIViewController {
     @IBOutlet weak var titleLabel: UITextField!
     @IBOutlet weak var bodyTextField: UITextView!
     
+    let backgroundImage = UIImage(named: "cloud_background.jpg")
+    
     @IBAction func doneButtonPressed(_ sender: Any) {
         
         notes.append(Note(title:titleLabel.text!, body:bodyTextField.text!))
@@ -23,6 +25,8 @@ class NoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "cloud_background.jpg")!)
+
         //bodyTextField.layer.cornerRadius = 12.0
         //bodyTextField.layer.borderWidth = 2.0
         //bodyTextField.layer.borderColor = UIColor(red:230, green:230, blue:230, alpha:1.0).cgColor

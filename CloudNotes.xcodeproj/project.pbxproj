@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AA64AFB211178C600530CB4 /* cloud_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AA64AFA211178C600530CB4 /* cloud_background.jpg */; };
 		9ACB7BE8210C565400CE0AD7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB7BE7210C565400CE0AD7 /* Note.swift */; };
 		9ACD8A782102A41B00AB010F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD8A772102A41B00AB010F /* AppDelegate.swift */; };
 		9ACD8A7A2102A41B00AB010F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD8A792102A41B00AB010F /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AA64AFA211178C600530CB4 /* cloud_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cloud_background.jpg; path = ../../../Desktop/cloud_background.jpg; sourceTree = "<group>"; };
 		9ACB7BE7210C565400CE0AD7 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		9ACD8A742102A41B00AB010F /* CloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACD8A772102A41B00AB010F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		9ACD8A762102A41B00AB010F /* CloudNotes */ = {
 			isa = PBXGroup;
 			children = (
+				9AA64AFA211178C600530CB4 /* cloud_background.jpg */,
 				9ACD8A772102A41B00AB010F /* AppDelegate.swift */,
 				9ACD8A792102A41B00AB010F /* ViewController.swift */,
 				9ACD8AE32102C11D00AB010F /* DetailViewController.swift */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ACD8A822102A41B00AB010F /* LaunchScreen.storyboard in Resources */,
+				9AA64AFB211178C600530CB4 /* cloud_background.jpg in Resources */,
 				9ACD8A7F2102A41B00AB010F /* Assets.xcassets in Resources */,
 				9ACD8A7D2102A41B00AB010F /* Main.storyboard in Resources */,
 			);
