@@ -25,12 +25,6 @@ class NoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "cloud_background.jpg")!)
-
-        //bodyTextField.layer.cornerRadius = 12.0
-        //bodyTextField.layer.borderWidth = 2.0
-        //bodyTextField.layer.borderColor = UIColor(red:230, green:230, blue:230, alpha:1.0).cgColor
-        
         bodyTextField.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).cgColor
         bodyTextField.layer.borderWidth = 1.0
         bodyTextField.layer.cornerRadius = 5

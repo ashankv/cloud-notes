@@ -21,9 +21,6 @@ class DetailViewController: UIViewController {
         let imageView = UIImageView(image: backgroundImage)
         imageView.alpha = 0.5
         
-        //let backgroundColor = UIColor(patternImage: UIImage(named: "cloud_background.jpg")!).withAlphaComponent(5)
-        //self.view.backgroundColor = backgroundColor
-        
         if let detail = detailItem {
             if let label = detailDescriptionLabel, let body = detailBodyLabel {
                 label.text = detail.title
