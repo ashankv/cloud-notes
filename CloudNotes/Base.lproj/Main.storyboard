@@ -152,6 +152,7 @@
                     </view>
                     <connections>
                         <outlet property="bodyTextField" destination="IY9-Uu-sgZ" id="Pg1-9T-4oD"/>
+                        <outlet property="titleLabel" destination="cuN-Qf-KNV" id="xQT-4z-S5H"/>
                         <outlet property="titleText" destination="76e-Ro-sLf" id="Uee-Cu-HmF"/>
                         <segue destination="bkg-YY-yMD" kind="unwind" identifier="unwindToMenu" unwindAction="unwindToMenuWithSegue:" id="bna-Nd-gsj"/>
                     </connections>

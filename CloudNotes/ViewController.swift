@@ -19,7 +19,7 @@ class ViewController: UITableViewController {
     }
     
     @IBAction func unwindToMenu(segue: UIStoryboardSegue) {
-        
+        self.tableView.reloadData()
     }
 
     
@@ -27,7 +27,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
+
         notes.append(testNote)
         notes.append(testNote)
         notes.append(testNote)

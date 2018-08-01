@@ -11,9 +11,12 @@ import UIKit
 class NoteViewController: UIViewController {
 
     @IBOutlet var titleText: UIView!
+    @IBOutlet weak var titleLabel: UITextField!
     @IBOutlet weak var bodyTextField: UITextView!
     
     @IBAction func doneButtonPressed(_ sender: Any) {
+        
+        notes.append(Note(title:titleLabel.text!, body:bodyTextField.text!))
         self.performSegue(withIdentifier: "unwindToMenu", sender: self)
     }
     
