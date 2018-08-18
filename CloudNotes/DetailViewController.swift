@@ -18,8 +18,7 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         
-        let imageView = UIImageView(image: backgroundImage)
-        imageView.alpha = 0.5
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "cloud_bg2.jpg")!)
         
         if let detail = detailItem {
             if let label = detailDescriptionLabel, let body = detailBodyLabel {

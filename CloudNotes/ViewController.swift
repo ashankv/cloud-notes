@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
+import AWSCognito
+import AWSS3
 
 var notes = [Any]()
 
 class ViewController: UITableViewController {
     
     var testNote = Note(title:"Test", body:"Hello World!")
-    let backgroundImage = UIImage(named: "cloud_background.jpg")
+    let backgroundImage = UIImage(named: "cloud_bg2.jpg")
     
     @IBAction func addButton(_ sender: Any) {
         performSegue(withIdentifier: "addSegue", sender: self)
@@ -28,8 +32,13 @@ class ViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
+                                                                identityPoolId:"us-east-1:89eb43f8-f578-43b5-b8f5-a1b04eb272b8")
+        let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        
         let imageView = UIImageView(image: backgroundImage)
-        imageView.alpha = 0.5
+        //imageView.alpha = 0.5
         
         self.tableView.backgroundView = imageView
         self.tableView.tableFooterView = UIView()
@@ -96,7 +105,6 @@ class ViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
     
@@ -105,7 +113,7 @@ class ViewController: UITableViewController {
             notes.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+            // Create a new instance of the class, insert  into the array, and add a new row to the table view.
         }
     }
     
